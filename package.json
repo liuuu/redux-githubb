@@ -1,0 +1,28 @@
+{
+  "name": "redux-ant",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "antd": "^2.11.1",
+    "axios": "^0.16.2",
+    "lodash": "^4.17.4",
+    "rc-queue-anim": "^1.0.5",
+    "react": "^15.6.1",
+    "react-addons-perf": "^15.4.2",
+    "react-dom": "^15.6.1",
+    "react-redux": "^5.0.5",
+    "react-router-dom": "^4.1.1",
+    "redux": "^3.7.0",
+    "redux-thunk": "^2.2.0"
+  },
+  "devDependencies": {
+    "flow-bin": "^0.48.0",
+    "react-scripts": "1.0.7"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}

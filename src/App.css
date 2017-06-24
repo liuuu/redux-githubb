@@ -1,0 +1,87 @@
+@import '~antd/dist/antd.css';
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.user-detail .ant-card {
+  font-size: 20px;
+  background: none;
+  box-sizing: border-box;
+}
+
+.user-detail .ant-card li {
+  color: #dedeee;
+}
+
+/*home component*/
+.home {
+  overflow: hidden;
+}
+.home-header {
+  color: white;
+}
+.home-header h1 {
+  font-size: 40px;
+}
+.home-header {
+  margin-top: 120px;
+  margin-bottom: 20px;
+}
+.home ul li {
+  display: inline-block;
+  width: 25%;
+  overflow: hidden;
+}
+.home ul li img {
+  display: inline-block;
+  width: 13vw;
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+.home button {
+  margin-top: 30px;
+  height: 40px;
+
+  /*border-radius: 20px;*/
+  border: none;
+  font-size: 17px;
+  padding: 5px 10px;
+  background-color: rgba(11, 11, 11, 0.5);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 1px 5px 0 rgba(0, 0, 0, 0.12),
+    0 3px 1px -2px rgba(0, 0, 0, 0.2);
+  transition: all 0.5s;
+}
+
+.home button a {
+  color: white;
+}
+.home button:hover {
+  background-color: rgba(11, 11, 11, 0.1);
+}
