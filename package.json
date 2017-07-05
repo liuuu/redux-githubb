@@ -16,8 +16,12 @@
     "redux-thunk": "^2.2.0"
   },
   "devDependencies": {
+    "enzyme": "^2.9.1",
+    "enzyme-to-json": "^1.5.1",
     "flow-bin": "^0.48.0",
-    "react-scripts": "1.0.7"
+    "moxios": "^0.4.0",
+    "react-scripts": "1.0.7",
+    "react-test-renderer": "^15.6.1"
   },
   "scripts": {
     "start": "react-scripts start",

@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should match snapshot Nav 1`] = `
+<div
+  class="ant-layout"
+>
+  <div
+    class="ant-layout-header"
+  >
+    <ul
+      aria-activedescendant=""
+      class="ant-menu ant-menu-horizontal  ant-menu-dark ant-menu-root"
+      role="menu"
+      style="line-height:64px;font-size:20px;"
+      tabindex="0"
+    >
+      <li
+        aria-selected="false"
+        class="ant-menu-item"
+        role="menuitem"
+      >
+        <a
+          href="/"
+        >
+          <i
+            class="anticon anticon-windows-o"
+          />
+        </a>
+      </li>
+      <li
+        aria-selected="false"
+        class="ant-menu-item"
+        role="menuitem"
+      >
+        <a
+          href="/all"
+        >
+          browse all
+        </a>
+      </li>
+      <li
+        aria-selected="false"
+        class="ant-menu-item"
+        role="menuitem"
+        style="float:right;"
+      >
+        About
+      </li>
+    </ul>
+  </div>
+</div>
+`;

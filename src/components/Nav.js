@@ -19,9 +19,7 @@ class Nav extends React.Component {
           >
             <Menu.Item><Link to="/"><Icon type="windows-o" /></Link></Menu.Item>
             <Menu.Item><Link to="/all">browse all</Link></Menu.Item>
-            <Menu.Item style={{ float: "right" }}>
-              About
-            </Menu.Item>
+            <Menu.Item style={{ float: "right" }}>About</Menu.Item>
           </Menu>
         </Header>
       </Layout>

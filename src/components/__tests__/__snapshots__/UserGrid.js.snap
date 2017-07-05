@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should be good 1`] = `
+<Col
+  span={8}
+  style={
+    Object {
+      "padding": "20px",
+    }
+  }
+>
+  <Link
+    replace={false}
+    style={
+      Object {
+        "color": "black",
+      }
+    }
+    to="/user/any"
+  >
+    <Component>
+      <div
+        className="popular-rank"
+      >
+        #
+        NaN
+      </div>
+      <ul
+        className="space-list-item"
+      >
+        <li>
+          <Avatar
+            alt="any"
+            className="avatar"
+            prefixCls="ant-avatar"
+            shape="circle"
+            size="default"
+          />
+        </li>
+        <li>
+          <p />
+        </li>
+        <li>
+          @
+          any
+        </li>
+        <li>
+          Stars: 
+        </li>
+      </ul>
+    </Component>
+  </Link>
+</Col>
+`;

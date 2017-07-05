@@ -5,27 +5,21 @@ import axios from "axios";
 
 import { connect } from "react-redux";
 import { Link, Prompt } from "react-router-dom";
-import { getProfile } from "../actions";
+import { getProfile } from "../actions/actionCreators";
 
-class UserDetail extends React.Component {
-  state: {
-    detail: Object
-  };
-
+export class UserDetail extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+      loading: true,
       detail: props.data,
       name: ""
     };
   }
 
   componentWillMount() {
-    const name: string = this.props.match.params.projectId;
+    let name = this.props.match && this.props.match.params.projectId;
     this.props.getProfile(name);
-    this.setState({
-      loading: true
-    });
   }
 
   // componentDidMount() {
