@@ -5,7 +5,7 @@ import { Row, Span, Card, Col, Avatar, Input, Icon, Spin } from "antd";
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 
-import * as actions from "../actions/actionCreators";
+import { fetchPopularRepos } from "../actions/actionCreators";
 import UserGrid from "./UserGrid";
 
 // flow
@@ -106,4 +106,4 @@ const mapStateToProps = (state, ownProps) => {
   };
 };
 
-export default connect(mapStateToProps, actions)(AllUser);
+export default connect(mapStateToProps, { fetchPopularRepos })(AllUser);
