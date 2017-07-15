@@ -3,23 +3,21 @@ import React, { Component } from "react";
 
 import "./App.css";
 import { Provider } from "react-redux";
-import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 import { createStore, applyMiddleware, compose } from "redux";
 import Nav from "./components/Nav";
-import Home from "./components/Home";
-import AllUser from "./components/AllUser";
-
-import UserDetail from "./components/UserDetail";
 
 import rootReducer from "./reducers/rootReducer";
 import ReduxThunk from "redux-thunk";
+
+import Routes from "./components/Routes";
 
 const store = createStore(
   rootReducer,
   compose(
     applyMiddleware(ReduxThunk), // middleware
     typeof window === "object" &&
-      typeof window.devToolsExtension !== "undefined"
+    typeof window.devToolsExtension !== "undefined"
       ? window.devToolsExtension()
       : f => f
   )
@@ -37,12 +35,7 @@ class App extends Component {
         <BrowserRouter>
           <div className="App">
             <Nav />
-            <Switch>
-              <Route exact path="/" component={Home} />
-              <Route exact path="/all" component={AllUser} />
-              <Route exact path="/user/:projectId" component={UserDetail} />
-              <Route render={() => <Redirect to="/" />} />
-            </Switch>
+            <Routes />
           </div>
         </BrowserRouter>
       </Provider>

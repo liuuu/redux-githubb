@@ -1,10 +1,9 @@
 //  @flow
 import React from "react";
-import { Card, Avatar, Col, Row, Spin } from "antd";
-import axios from "axios";
+import { Card, Col, Row, Spin } from "antd";
 
 import { connect } from "react-redux";
-import { Link, Prompt } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { getProfile } from "../actions/actionCreators";
 
 export class UserDetail extends React.Component {
@@ -51,7 +50,6 @@ export class UserDetail extends React.Component {
         <Row type="flex" justify="center" style={{ marginTop: 50 }}>
           <Col span={10}>
             <Card bodyStyle={{ padding: 0 }} bordered={false}>
-
               <ul className="space-list-item">
                 <li>
                   <img
@@ -61,11 +59,18 @@ export class UserDetail extends React.Component {
                     alt={detail.login}
                   />
                 </li>
-                <li><p>{detail.name}</p></li>
+                <li>
+                  <p>
+                    {detail.name}
+                  </p>
+                </li>
 
-                <li>{detail.bio}</li>
-                <li><Link to="/all">back to all</Link></li>
-
+                <li>
+                  {detail.bio}
+                </li>
+                <li>
+                  <Link to="/all">back to all</Link>
+                </li>
               </ul>
             </Card>
           </Col>

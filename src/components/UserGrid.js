@@ -4,10 +4,12 @@ import { Link } from "react-router-dom";
 
 const UserGrid = props => {
   return (
-    <Col span={8} style={props.style} style={{ padding: "20px" }}>
+    <Col span={8} style={(props.style, { padding: "20px" })}>
       <Link to={`/user/${props.owner.login}`} style={{ color: "black" }}>
         <Card>
-          <div className="popular-rank">#{parseInt(`${props.index}`) + 1}</div>
+          <div className="popular-rank">
+            #{parseInt(`${props.index}`, 10) + 1}
+          </div>
           <ul className="space-list-item">
             <li>
               <Avatar
@@ -16,11 +18,19 @@ const UserGrid = props => {
                 alt={props.owner.login}
               />
             </li>
-            <li><p>{props.name}{props.id}</p></li>
-            <li>@{props.owner.login}</li>
-            <li>Stars: {props.stargazers_count}</li>
+            <li>
+              <p>
+                {props.name}
+                {props.id}
+              </p>
+            </li>
+            <li>
+              @{props.owner.login}
+            </li>
+            <li>
+              Stars: {props.stargazers_count}
+            </li>
           </ul>
-
         </Card>
       </Link>
     </Col>

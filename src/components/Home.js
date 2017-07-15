@@ -1,6 +1,5 @@
 // @flow
 import React from "react";
-import { Card, Row, Col } from "antd";
 import QueueAnim from "rc-queue-anim";
 import { Link } from "react-router-dom";
 import facebook from "../img/facebook-icon.svg";
@@ -28,27 +27,28 @@ class Home extends React.Component {
   render() {
     return (
       <div className="home">
-
         <div className="home-header" key="header">
           <h1>This is a redux Demo site</h1>
         </div>
 
         <QueueAnim
-          type="left"
           className="democontent"
           duration={1500}
           delay={100}
           type="bottom"
         >
-
           {this.state.show
             ? [
                 <ul key="box" className="box">
-
-                  <li key="0"><img src={facebook} alt="sdf" /></li>
-                  <li key="1"><img src={react1} alt="github-icon.svg" /></li>
-                  <li key="2"><img src={github} alt="react-1.svg" /></li>
-
+                  <li key="0">
+                    <img src={facebook} alt="sdf" />
+                  </li>
+                  <li key="1">
+                    <img src={react1} alt="github-icon.svg" />
+                  </li>
+                  <li key="2">
+                    <img src={github} alt="react-1.svg" />
+                  </li>
                 </ul>
               ]
             : null}
@@ -57,8 +57,8 @@ class Home extends React.Component {
           <button>
             <Link to="all">browser the popular Projects of github</Link>
           </button>
+          <button>ahe</button>
         </div>
-
       </div>
     );
   }

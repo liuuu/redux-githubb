@@ -8,3 +8,7 @@
 
 - 根据redux doc, 把`connected component`的component单独export出, 然后测试
 - 用了moxios去截获`action creator`中`redux-thunk`的异步请求
+
+## code-splitting
+- add code-splitting to the project
+- fixed all the previous warning of `components defined but never used`

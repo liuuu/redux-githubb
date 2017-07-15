@@ -1,8 +1,5 @@
 // @flow
 
-import { combineReducers } from "redux";
-import { FETCH_POPULAR_REPOS } from "../actions/actions";
-
 // type State = {
 //   isLoading: boolean,
 //   reposData: Array<any>

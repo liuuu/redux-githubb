@@ -1,6 +1,6 @@
 // @flow
 
-type state = {};
+// type state = {};
 const singleUserReducer = (state = {}, action) => {
   switch (action.type) {
     case "FETCH_PROJECT_INFO":

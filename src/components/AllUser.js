@@ -1,8 +1,7 @@
 // @flow
 import React from "react";
-import { Row, Span, Card, Col, Avatar, Input, Icon, Spin } from "antd";
+import { Row, Input, Spin, Icon } from "antd";
 
-import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 
 import { fetchPopularRepos } from "../actions/actionCreators";
