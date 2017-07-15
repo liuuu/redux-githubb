@@ -57,7 +57,6 @@ class Home extends React.Component {
           <button>
             <Link to="all">browser the popular Projects of github</Link>
           </button>
-          <button>ahe</button>
         </div>
       </div>
     );
